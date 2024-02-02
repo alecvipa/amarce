@@ -2,6 +2,14 @@ nav {
     background-color: white !important ;
     
 }
+.blink {
+    animation: blinker 1s linear infinite;
+  }
+  @keyframes blinker {
+    50% {
+      opacity: 0.5;
+    }
+}
 #nav-mobile{
     background-color: black;
 }
@@ -61,10 +69,7 @@ nav {
     text-align: center !important;
 }
 .fonts{
-    font-family: 'Inter', sans-serif;
-    font-family: 'Josefin Sans', sans-serif;
-    font-family: 'Nunito Sans', sans-serif;
-    font-family: 'Work Sans', sans-seri
+    font-family: 'Belleza', sans-serif;
 }
 .blackBack{
     background-color: black !important;
