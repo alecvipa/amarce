@@ -2,6 +2,7 @@ nav {
     background-color: white !important ;
     
 }
+
 .blink {
     animation: blinker 1s linear infinite;
   }
@@ -46,6 +47,14 @@ nav {
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: 3%;
+}
+.microbladingBanner{
+    margin-top: 6%;
+    height: 37rem;
+    background-image: url("/assets/images/microblading.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .bannerPrivacidad{
     background-image: url("/assets/images/sal.jpg");
