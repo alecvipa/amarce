@@ -40,6 +40,14 @@ nav {
     background-size: cover;
     /* margin-bottom: -2%; */
 }
+.imageArtistry{
+    height: 52rem;
+    background-image: url("/assets/images/artistryBanner.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 3%;
+}
 .imageGracias{
     height: 35rem;
     background-image: url("/assets/images/neoNoir.jpg");
@@ -158,6 +166,10 @@ p {
     }
 }
 @media only screen and (max-width : 992px) {
+    .imageArtistry{
+        height: 52rem;
+        background-image: url("/assets/images/artistrycel.jpg");
+    }
 
     .microbladingBanner{
         height: 47rem;
