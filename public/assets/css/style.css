@@ -40,6 +40,14 @@ nav {
     background-size: cover;
     /* margin-bottom: -2%; */
 }
+.yearsInnovating{
+    height: 52rem;
+    background-image: url("/assets/images/yearsServices.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
 .imageArtistry{
     height: 52rem;
     background-image: url("/assets/images/artistryBanner.jpg");
@@ -166,6 +174,12 @@ p {
     }
 }
 @media only screen and (max-width : 992px) {
+    
+    .yearsInnovating{
+        height: 52rem;
+        background-image: url("/assets/images/servicesStory.jpg");
+
+    }
     .imageArtistry{
         height: 52rem;
         background-image: url("/assets/images/artistrycel.jpg");
