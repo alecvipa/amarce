@@ -1,12 +1,11 @@
 <div class="contactoDiv">
-   
+
     <br>
     <div class="container centered titleSiguenos">
         <div class="row">
 
-            <h3>Contáctame</h3>
-            <p style="font-style: italic; font-size: 1.5rem">También puedes enviar correo directamente a:
-                alecvipa@gmail.com
+            <h3>Leave us your info</h3>
+            <p style=" font-size: 1.5rem">Our personal will contact you shortly to book an appointment
             </p>
 
         </div>
@@ -14,30 +13,30 @@
             <form class="col s12" action="/ajax/email" method="POST" onsubmit="return submitEmailForm(this);">
                 <div class="row">
                     <div class="input-field col s6">
-                        <input name="name" placeholder="Nombre" id="first_name" type="text" class="validate formInput"
+                        <input name="name" placeholder="Name" id="first_name" type="text" class="validate formInput"
                             required="" aria-required="true">
-                        <label for="first_name">Nombre completo</label>
+                        <label for="first_name">Name</label>
                     </div>
                     <div class="input-field col s6">
-                        <input name="email" id="email" type="text" class="validate formInput" required=""
+                        <input name="number" id="email" type="number" class="validate formInput" required=""
                             aria-required="true">
-                        <label for="email">Correo electrónico</label>
+                        <label for="email">Contact number</label>
                     </div>
                 </div>
                 <div class="row">
                     <div class="input-field col s12">
                         <input name="message" id="input_text" type="text" data-length="10" required=""
                             aria-required="true" class="formInput">
-                        <label for="input_text">Mensaje</label>
+                        <label for="input_text">Service of interest</label>
                     </div>
                 </div>
                 <div class="row">
                     <label>
                         <input type="checkbox" required="" aria-required="true" />
-                        <span>Acepto <a href="/privacidad">aviso de privacidad</a></span>
+                        <span>I accept the <a href="/privacidad">privacy policy</a></span>
                     </label>
                 </div>
-                <button class="btn waves-effect waves-light #212121 grey darken-4">Enviar
+                <button class="btn waves-effect waves-light #212121 grey darken-4">Send
                     <i class="material-icons right" style="color: white !important;">send</i>
                 </button>
             </form>
@@ -46,49 +45,21 @@
     <div class="opcionComprar">
         <div class="container">
             <div class="row centered titleSiguenos">
-                <h4>Te invito a ver los productos destacados de mi tienda:</h4>
+                <h4>Take a look to our offer. We keep innovating for you:</h4>
             </div>
             <div class="row">
                 <div class="col l4 m4 s6">
-                    <img class="responsive-img" src="/assets/images/libroSmirnov.jpg"
-                        onclick="location.href='/tienda';">
+                    <img class="responsive-img" src="/assets/images/paramedicalT.jpg"
+                        onclick="location.href='/services';">
+                </div>
+
+                <div class="col l4 m4 s6">
+                    <img class="responsive-img" src="/assets/images/serviceSkin.jpg" onclick="location.href='/services';">
                 </div>
                 <div class="col l4 m4 s6">
-                    <img class="responsive-img" src="/assets/images/tazaCuadrada.jpg"
-                        onclick="location.href='/tienda';">
-                </div>
-                <div class="col l4 m4 s6">
-                    <img class="responsive-img" src="/assets/images/proximaCuadrada.jpg"
-                        onclick="location.href='/tienda';">
+                    <img class="responsive-img" src="/assets/images/permanentM.jpg" onclick="location.href='/services';">
                 </div>
             </div>
         </div>
     </div> <br>
 </div>
-<footer class="page-footer #424242 grey darken-3">
-    <div class="container">
-        <div class="row">
-            <div class="col l6 s12">
-                <h5 class="white-text">Alejandro Vilpa</h5>
-                <p class="white-text text-lighten-4">—Thriller novel writer.
-                </p>
-
-
-            </div>
-            <div class="col l3 s12">
-                <h5 class="white-text navBarD">Site map</h5>
-                <ul>
-                    <li><a href="/" class="white-text navBarD">Home</a></li>
-                    <li><a href="/tienda" class="white-text navBarD">Store</a></li>
-                    <li><a href="/club" class="white-text navBarD">Club</a></li>
-                    <li><a href="/privacidad" class="white-text navBarD">Privacy Policy</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="footer-copyright #616161 grey darken-2">
-        <div class="container centered">
-            Copyright © <a href="/" style="color: lightgrey;">2022 Alejandro Vilpa - All rights reserved.</a>
-        </div>
-    </div>
-</footer>
