@@ -73,10 +73,11 @@ nav {
     background-size: cover;
 }
 .bannerPrivacidad{
-    background-image: url("/assets/images/sal.jpg");
+    background-image: url("/assets/images/privacyBanner.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    height: 25rem;
 
 }
 .overlayPrivacidad{
@@ -174,7 +175,11 @@ p {
     }
 }
 @media only screen and (max-width : 992px) {
+    .bannerPrivacidad{
+        height: 13rem;
     
+    }
+
     .yearsInnovating{
         height: 52rem;
         background-image: url("/assets/images/servicesStory.jpg");
