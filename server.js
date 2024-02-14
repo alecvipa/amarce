@@ -45,19 +45,19 @@ app.get('/:params?', function (req, res) {
 
 // Routes in english
 
-app.get('/home', function (req, res) {
+// app.get('/home', function (req, res) {
 
-    res.render('home')
+//     res.render('home')
 
-});
+// });
 
 // Routes en français
 
-app.get('/accueil', function (req, res) {
+// app.get('/accueil', function (req, res) {
 
-    res.render('accueil')
+//     res.render('accueil')
 
-});
+// });
 
 
 // Nodemailer route
