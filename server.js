@@ -14,6 +14,10 @@ var app = express();
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
+app.use('/robots.txt', function (req, res, next) {
+    res.type('text/plain')
+    res.send("User-agent: *\nDisallow: /");
+});
 
 app.use(express.static("public"));
 
@@ -40,6 +44,11 @@ app.get('/:params?', function (req, res) {
     var params = req.params.params;
     res.render(params);
 })
+
+app.get('/robots.txt', function (req, res) {
+    res.type('text/plain');
+    res.send("User-agent: *\nDisallow: /");
+});
 
 
 
