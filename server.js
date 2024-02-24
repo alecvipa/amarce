@@ -33,20 +33,41 @@ app.set("view engine", "handlebars");
 
 
 // Redirect to https://xyncs.com
-const targetBaseUrl = 'https://www.amarceaesthetics.com/home';
+// const targetBaseUrl = 'https://www.amarceaesthetics.com/home';
 
 
 
 // Routes
 app.get('/', function (req, res) {
-    res.redirect(targetBaseUrl);
-    // res.render('inicio')
+    // res.redirect(targetBaseUrl);
+    res.render('home')
 
 });
-app.get('/:params?', function (req, res) {
-    var params = req.params.params;
-    res.render(params);
-})
+app.get('/aboutus', function (req, res) {
+    res.render('aboutus')
+
+});
+app.get('/contact', function (req, res) {
+    res.render('contact')
+
+});
+app.get('/gracias', function (req, res) {
+    res.render('gracias')
+
+});
+app.get('/privacy', function (req, res) {
+    res.render('privacy')
+
+});
+app.get('/services', function (req, res) {
+    res.render('services')
+
+});
+
+// app.get('/:params?', function (req, res) {
+//     var params = req.params.params;
+//     res.render(params);
+// })
 
 // app.get('/robots.txt', function (req, res) {
 //     res.type('text/plain');
