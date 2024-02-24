@@ -9,6 +9,7 @@ const superSecretPwd = process.env.superSecretPwd;
 const tokenFb = process.env.tokenAccesoFB
 
 
+
 // Create an instance of the express app.
 var app = express();
 
@@ -25,9 +26,25 @@ app.use(express.static("public"));
 // process.env.PORT lets the port be set by Heroku
 var PORT = process.env.PORT || 3000;
 
+
 // Set Handlebars as the default templating engine.
 app.engine("handlebars", exphbs.engine({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
+
+
+const { SitemapStream, streamToPromise } = require('sitemap')
+const { Readable } = require('stream')
+
+// An array with your links
+const links = [{ url: '/page-1/', changefreq: 'daily', priority: 0.3 }]
+
+// Create a stream to write to
+const stream = new SitemapStream({ hostname: 'https://www.amarceaesthetics.com/home' })
+
+// Return a promise that resolves with your XML string
+return streamToPromise(Readable.from(links).pipe(stream)).then((data) =>
+    data.toString()
+)
 
 // Redirect to https://xyncs.com
 const targetBaseUrl = 'https://www.amarceaesthetics.com/home';
