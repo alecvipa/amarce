@@ -1,1 +1,3 @@
 # amarce
+User-agent: *
+Allow: /
