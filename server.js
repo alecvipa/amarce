@@ -33,14 +33,14 @@ app.set("view engine", "handlebars");
 
 
 // Redirect to https://xyncs.com
-// const targetBaseUrl = 'https://www.amarceaesthetics.com/home';
+const targetBaseUrl = 'https://www.amarceaesthetics.com/home';
 
 
 
 // Routes
 app.get('/', function (req, res) {
-    // res.redirect(targetBaseUrl);
-    res.render('home')
+    res.redirect(targetBaseUrl);
+    // res.render('home')
 
 });
 app.get('/aboutus', function (req, res) {
