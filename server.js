@@ -43,6 +43,11 @@ app.get('/', function (req, res) {
     // res.render('home')
 
 });
+app.get('/home', function (req, res) {
+    // res.redirect(targetBaseUrl);
+    res.render('home')
+
+});
 app.get('/aboutus', function (req, res) {
     res.render('aboutus')
 
