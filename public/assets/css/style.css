@@ -166,15 +166,33 @@ p {
 .parallax-container{
     min-width: 350px !important;
 }
-
+.responsiveScalp1{
+    display: none;
+}
+.responsiveScalp2{
+    display: none;
+}
 
 
 @media only screen and (min-width : 992px) {
     .navUl{
         padding-top: 3%;
     }
+    .responsiveScalp1{
+        display: block;
+    }
+    .responsiveScalp2{
+        display: none;
+    }
 }
 @media only screen and (max-width : 992px) {
+
+    .responsiveScalp1{
+        display: none;
+    }
+    .responsiveScalp2{
+        display: block;
+    }
     .bannerPrivacidad{
         height: 13rem;
     
